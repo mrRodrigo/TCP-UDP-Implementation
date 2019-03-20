@@ -4,6 +4,7 @@ import java.net.*;
 
 class UDPServer {
   public static void main(String args[]) throws Exception {
+    
     // cria socket do servidor com a porta 9876
     DatagramSocket serverSocket = new DatagramSocket(9876);
 
@@ -15,11 +16,8 @@ class UDPServer {
       // recebe o pacote do cliente
       serverSocket.receive(receivePacket);
 
-      // pega os dados, o endere�o IP e a porta do cliente
-      // para poder mandar a msg de volta
+      // pega conteudo do pacote recebido
       String sentence = new String(receivePacket.getData());
-      InetAddress IPAddress = receivePacket.getAddress();
-      int port = receivePacket.getPort();
 
       System.out.print(sentence);
     }
