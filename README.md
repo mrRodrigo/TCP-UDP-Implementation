@@ -1,3 +1,3 @@
 ## labredes
 
-- Implementation of Server/Client Socket (TCP/UDP)
+- Simple Java UDP/TCP Server and Client Socket
