@@ -1,4 +1,3 @@
 ## labredes
 
-- Implementation of Server/Client Socket (TCP)
-- Implementation of Server/Client Datagram UDP
+- Implementation of Server/Client Socket (TCP/UDP)
